@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SADP_Kiosk_System
+namespace Kiosk_System
 {
     internal static class Program
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SADP_Kiosk_System.Properties
+namespace Kiosk_System.Properties
 {
 
 

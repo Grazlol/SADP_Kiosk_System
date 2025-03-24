@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FFBA8A5F-0926-4E1B-BA08-595B40602C7C}</ProjectGuid>
+    <ProjectGuid>{54AF0611-688E-4843-93F2-BB6816EC5D47}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SADP_Kiosk_System</RootNamespace>
-    <AssemblyName>SADP_Kiosk_System</AssemblyName>
+    <RootNamespace>Kiosk_System</RootNamespace>
+    <AssemblyName>Kiosk_System</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
