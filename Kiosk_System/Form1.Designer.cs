@@ -39,6 +39,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -146,12 +149,42 @@
             // panel6
             // 
             this.panel6.AutoScroll = true;
+            this.panel6.Controls.Add(this.panel5);
+            this.panel6.Controls.Add(this.panel4);
+            this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.panel2);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(289, 6);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1064, 1335);
             this.panel6.TabIndex = 18;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(593, 173);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(317, 391);
+            this.panel3.TabIndex = 17;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(139, 693);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(317, 391);
+            this.panel4.TabIndex = 18;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Location = new System.Drawing.Point(593, 693);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(317, 391);
+            this.panel5.TabIndex = 19;
             // 
             // Form1
             // 
@@ -189,6 +222,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
