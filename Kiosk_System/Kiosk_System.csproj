@@ -46,16 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Checkout_Screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Checkout_Screen.Designer.cs">
+      <DependentUpon>Checkout_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrder_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrder_Screen.Designer.cs">
+      <DependentUpon>ViewOrder_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quantity_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quantity_Screen.Designer.cs">
+      <DependentUpon>Quantity_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start_Screen.Designer.cs">
+      <DependentUpon>Start_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiosk_Screen.Designer.cs">
+      <DependentUpon>Kiosk_Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Checkout_Screen.resx">
+      <DependentUpon>Checkout_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrder_Screen.resx">
+      <DependentUpon>ViewOrder_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quantity_Screen.resx">
+      <DependentUpon>Quantity_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start_Screen.resx">
+      <DependentUpon>Start_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiosk_Screen.resx">
+      <DependentUpon>Kiosk_Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +115,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheeseburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fillet_burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coke.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
