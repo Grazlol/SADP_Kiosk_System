@@ -36,6 +36,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.logo_px = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
@@ -78,12 +79,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.food_item1 = new System.Windows.Forms.Panel();
-            this.logo_px = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_px)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_px)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_menu
@@ -176,6 +176,16 @@
             this.button1.Size = new System.Drawing.Size(75, 78);
             this.button1.TabIndex = 10;
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // logo_px
+            // 
+            this.logo_px.BackColor = System.Drawing.Color.LightGray;
+            this.logo_px.Location = new System.Drawing.Point(20, 13);
+            this.logo_px.Margin = new System.Windows.Forms.Padding(2);
+            this.logo_px.Name = "logo_px";
+            this.logo_px.Size = new System.Drawing.Size(112, 112);
+            this.logo_px.TabIndex = 1;
+            this.logo_px.TabStop = false;
             // 
             // panel6
             // 
@@ -664,16 +674,6 @@
             this.food_item1.Size = new System.Drawing.Size(180, 180);
             this.food_item1.TabIndex = 19;
             // 
-            // logo_px
-            // 
-            this.logo_px.BackColor = System.Drawing.Color.LightGray;
-            this.logo_px.Location = new System.Drawing.Point(20, 13);
-            this.logo_px.Margin = new System.Windows.Forms.Padding(2);
-            this.logo_px.Name = "logo_px";
-            this.logo_px.Size = new System.Drawing.Size(112, 112);
-            this.logo_px.TabIndex = 1;
-            this.logo_px.TabStop = false;
-            // 
             // Kiosk_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -683,21 +683,19 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Kiosk_Screen";
             this.Text = " ";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_px)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_px)).EndInit();
             this.ResumeLayout(false);
 
         }

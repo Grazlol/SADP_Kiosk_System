@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,10 @@ namespace Kiosk_System
         {
             InitializeComponent();
         }
+        public void _ready()
+        {
 
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -45,6 +49,11 @@ namespace Kiosk_System
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void _onClick(object sender, EventArgs e)
+        {
+            KSession.nextwindow("KIOSK");
         }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -59,17 +59,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(982, 671);
             this.panel7.TabIndex = 21;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(358, 261);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 37);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Company Name";
+            this.panel7.Click += new System.EventHandler(this._onClick);
             // 
             // label2
             // 
@@ -81,6 +71,17 @@
             this.label2.Size = new System.Drawing.Size(601, 55);
             this.label2.TabIndex = 15;
             this.label2.Text = "Click Anywhere to Order";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(358, 261);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(261, 37);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Company Name";
             // 
             // pictureBox1
             // 
@@ -100,11 +101,9 @@
             this.ClientSize = new System.Drawing.Size(1031, 702);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Start_Screen";
             this.Text = " ";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);

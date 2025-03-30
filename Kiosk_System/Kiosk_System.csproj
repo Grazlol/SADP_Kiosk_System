@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 9.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +55,12 @@
     </Compile>
     <Compile Include="Checkout_Screen.Designer.cs">
       <DependentUpon>Checkout_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INDEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INDEX.Designer.cs">
+      <DependentUpon>INDEX.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewOrder_Screen.cs">
       <SubType>Form</SubType>
@@ -80,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Checkout_Screen.resx">
       <DependentUpon>Checkout_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INDEX.resx">
+      <DependentUpon>INDEX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewOrder_Screen.resx">
       <DependentUpon>ViewOrder_Screen.cs</DependentUpon>

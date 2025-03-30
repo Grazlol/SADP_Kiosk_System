@@ -17,6 +17,11 @@ namespace Kiosk_System
             InitializeComponent();
         }
 
+        public void _ready()
+        {
+
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
