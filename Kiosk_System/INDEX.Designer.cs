@@ -1,6 +1,6 @@
 ﻿namespace Kiosk_System
 {
-    partial class INDEX
+    partial class Kiosk
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,17 @@
         {
             this.SuspendLayout();
             // 
-            // INDEX
+            // Kiosk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1374, 699);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1424, 851);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
-            this.Name = "INDEX";
-            this.Text = "INDEX";
+            this.Name = "Kiosk";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.Load += new System.EventHandler(this._ready);
             this.ResumeLayout(false);
 

@@ -33,7 +33,7 @@ namespace Kiosk_System
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            KSession.nextwindow("VIEW_ORDER");
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -59,6 +59,11 @@ namespace Kiosk_System
         private void label28_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void _onclick(object sender, MouseEventArgs e)
+        {
+            KSession.nextwindow("QUANTITY");
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Kiosk_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new INDEX());
+            Application.Run(new Kiosk());
         }
     }
 
@@ -33,7 +33,7 @@ namespace Kiosk_System
         public static Quantity_Screen QUANTITY;
         public static Start_Screen START;
         public static ViewOrder_Screen VIEW_ORDER;
-        public static INDEX viewport = new INDEX();
+        public static Kiosk viewport = new Kiosk();
         public static string currentTime;
         public static string user;
         public static void NewSession()//Resets the current session to a new user
@@ -117,7 +117,7 @@ namespace Kiosk_System
         
         }
 
-        static string database_properties = "";
+        static string database_properties = "server=192.168.250.54;user=remote_user;password=admin123;database=ksys";
 
         private static MySqlCommand cmd;//DONT TOUCH THIS BTW
         private static string Last_Created_ID = "";

@@ -165,6 +165,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Go Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // proceed_btn
             // 
@@ -697,7 +698,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewOrder_Screen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = "RE";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();

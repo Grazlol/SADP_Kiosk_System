@@ -33,7 +33,7 @@ namespace Kiosk_System
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            KSession.nextwindow("CHECK_OUT");
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -59,6 +59,11 @@ namespace Kiosk_System
         private void button6_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KSession.nextwindow("KIOSK");
         }
     }
 }

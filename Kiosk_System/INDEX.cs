@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kiosk_System
 {
-    public partial class INDEX : Form
+    public partial class Kiosk : Form
     {
-        public INDEX()
+        public Kiosk()
         {
             InitializeComponent();
             
