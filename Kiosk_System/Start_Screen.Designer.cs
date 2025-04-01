@@ -53,7 +53,6 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.Controls.Add(this.label2);
             this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.pictureBox1);

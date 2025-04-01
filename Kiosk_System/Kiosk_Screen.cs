@@ -16,6 +16,15 @@ namespace Kiosk_System
         {
             InitializeComponent();
         }
+
+        void Food_Item()
+        {
+            int i = 0;
+            while (i < 5)
+            {
+               
+            }
+        }
         public void _ready()
         {
 
@@ -64,6 +73,16 @@ namespace Kiosk_System
         private void _onclick(object sender, MouseEventArgs e)
         {
             KSession.nextwindow("QUANTITY");
+        }
+
+        private void food_item1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void food_set1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
