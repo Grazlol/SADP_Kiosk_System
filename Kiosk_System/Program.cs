@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySqlX.XDevAPI.Relational;
 using System.Data.SqlClient;
+using System.Drawing;
 
 namespace Kiosk_System
 {
@@ -34,6 +35,7 @@ namespace Kiosk_System
         public static Start_Screen START;
         public static ViewOrder_Screen VIEW_ORDER;
         public static Kiosk viewport = new Kiosk();
+        public static food_item[] current_items;
         public static string currentTime;
         public static string user;
         public static void NewSession()//Resets the current session to a new user
@@ -54,10 +56,35 @@ namespace Kiosk_System
             user = "null";
 
             nextwindow("START");
+            refresh();
         }
 
         public static void refresh()//Refreshes the current session
         {
+            DataTable rawitems = readQuery("select * from table_inv");
+            List<food_item> tempitems = new List<food_item>();
+
+            foreach (DataRow row in rawitems.Rows)
+            {
+                tempitems.Add(new food_item());
+                tempitems[tempitems.Count - 1].it_code = row.ItemArray[0].ToString();
+                tempitems[tempitems.Count - 1].it_name = row.ItemArray[1].ToString();
+                tempitems[tempitems.Count - 1].it_price = float.Parse(row.ItemArray[2].ToString());
+                tempitems[tempitems.Count - 1].it_ingr = row.ItemArray[3].ToString().Split(',');
+                tempitems[tempitems.Count - 1].it_cate = tempitems[tempitems.Count - 1].it_code[0].ToString();
+
+                if (row.ItemArray[4].ToString() != "null")
+                {
+                    tempitems[tempitems.Count - 1].it_icon = new Bitmap(row.ItemArray[4].ToString());
+                }
+                
+            }
+
+            current_items = tempitems.ToArray();
+
+            Console.WriteLine(current_items.Length);
+
+
             CHECK_OUT._ready();
             KIOSK._ready();
             QUANTITY._ready();
@@ -117,7 +144,7 @@ namespace Kiosk_System
         
         }
 
-        static string database_properties = "server=192.168.250.54;user=remote_user;password=admin123;database=ksys";
+        static string database_properties = "server='localhost';user='root';password='';database=ksys";
 
         private static MySqlCommand cmd;//DONT TOUCH THIS BTW
         private static string Last_Created_ID = "";
@@ -152,12 +179,25 @@ namespace Kiosk_System
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             
             adapter.Fill(dt);
-            return dt;
             con.Close();
+            return dt;
+            
         }
 
 
     }
+    public class food_item
+    {
+        public string it_cate;
+        public string it_name;
+        public string[] it_ingr;
+        public string it_code;
+        public Image it_icon;
+        public float it_price;
 
-
+        public bool is_avail()
+        {
+            return true;
+        }
+    }
 }
