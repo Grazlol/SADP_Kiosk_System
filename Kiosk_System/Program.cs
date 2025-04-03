@@ -38,6 +38,9 @@ namespace Kiosk_System
         public static food_item[] current_items;
         public static string currentTime;
         public static string user;
+        public static bool isTakeout;
+
+        private static List<String> ITEMID = new List<string>();
         public static void NewSession()//Resets the current session to a new user
         {
             CHECK_OUT = new Checkout_Screen();
@@ -63,11 +66,13 @@ namespace Kiosk_System
         {
             DataTable rawitems = readQuery("select * from table_inv");
             List<food_item> tempitems = new List<food_item>();
+            ITEMID.Clear();
 
             foreach (DataRow row in rawitems.Rows)
             {
                 tempitems.Add(new food_item());
                 tempitems[tempitems.Count - 1].it_code = row.ItemArray[0].ToString();
+                ITEMID.Add(row.ItemArray[0].ToString());
                 tempitems[tempitems.Count - 1].it_name = row.ItemArray[1].ToString();
                 tempitems[tempitems.Count - 1].it_price = float.Parse(row.ItemArray[2].ToString());
                 tempitems[tempitems.Count - 1].it_ingr = row.ItemArray[3].ToString().Split(',');
@@ -93,7 +98,6 @@ namespace Kiosk_System
         }
 
         public static void nextwindow(string index = "CHECK_OUT"){
-
             switch (index)
             {
                 case "CHECK_OUT":
@@ -139,9 +143,10 @@ namespace Kiosk_System
                     VIEW_ORDER.Hide();
                     break;
             }
-        
 
-        
+            refresh();
+
+
         }
 
         static string database_properties = "server='localhost';user='root';password='';database=ksys";
@@ -184,6 +189,11 @@ namespace Kiosk_System
             
         }
 
+        public static food_item fetchItemID(string ItemID)
+        {
+            return current_items[ITEMID.IndexOf(ItemID)];
+        }
+
 
     }
     public class food_item
@@ -199,5 +209,19 @@ namespace Kiosk_System
         {
             return true;
         }
+    }
+
+    public class Kiosk_Page
+    {
+        public string category;
+        public food_item[] item_set;
+    }
+
+    public class Order
+    {
+        public string orderName;
+        public string orderCate;
+        public int OrderAmount;
+        public float OrderPrice;
     }
 }

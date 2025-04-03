@@ -15,8 +15,8 @@ namespace Kiosk_System
     {
         public int current_page = 1;
         public string current_cate = "B";
-        private Kiosk_Page[] page_glossary;
-        private int quantity_window_index = 1; 
+        public Kiosk_Page[] page_glossary;
+        public int quantity_window_index = 1; 
         public Kiosk_Screen()
         {
             InitializeComponent();
@@ -69,10 +69,7 @@ namespace Kiosk_System
                 a += 8;
                 page_glossary[j].item_set = tempitemset.ToArray();
             }
-            foreach (food_item item in page_glossary[0].item_set)
-            {
-                Console.WriteLine(item.it_name.ToString());
-            }
+
 
             for (int i = 0; i < 8; i++)
             {
@@ -214,38 +211,49 @@ namespace Kiosk_System
 
         private void burger(object sender, EventArgs e)
         {
+            quantity_window_index = 1;
             current_cate = "B";
             KSession.refresh();
         }
 
         private void chicken(object sender, EventArgs e)
         {
+            quantity_window_index = 1;
             current_cate = "C";
             KSession.refresh();
         }
 
         private void fish(object sender, EventArgs e)
         {
+            quantity_window_index = 1;
             current_cate = "F";
             KSession.refresh();
         }
 
         private void sides(object sender, EventArgs e)
         {
+            quantity_window_index = 1;
             current_cate = "S";
             KSession.refresh();
         }
 
         private void dessert(object sender, EventArgs e)
         {
+            quantity_window_index = 1;
             current_cate = "D";
             KSession.refresh();
         }
+
+        private void food_set2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void foodpfp6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
-    public class Kiosk_Page
-    {
-        public string category;
-        public food_item[] item_set;
-    }
+    
 }
