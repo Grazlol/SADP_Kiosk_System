@@ -253,6 +253,11 @@ namespace Kiosk_System
         {
 
         }
+
+        private void food_set8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     

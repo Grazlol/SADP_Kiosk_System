@@ -23,7 +23,7 @@ namespace Kiosk_System
             Console.WriteLine(KSession.KIOSK.page_glossary.Length);
             Console.WriteLine(KSession.KIOSK.page_glossary[KSession.KIOSK.current_page - 1].item_set.Length.ToString());
             Console.WriteLine(KSession.KIOSK.quantity_window_index - 1);
-            kiosk_item = KSession.KIOSK.page_glossary[KSession.KIOSK.current_page - 1].item_set[KSession.KIOSK.quantity_window_index - ];
+            kiosk_item = KSession.KIOSK.page_glossary[KSession.KIOSK.current_page - 1].item_set[KSession.KIOSK.quantity_window_index - 1];
             quantity = 1;
             labelqty.Text = quantity.ToString();
             label_price.Text = (kiosk_item.it_price).ToString(".00");

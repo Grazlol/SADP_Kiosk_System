@@ -64,6 +64,7 @@ namespace Kiosk_System
 
         public static void refresh()//Refreshes the current session
         {
+            
             DataTable rawitems = readQuery("select * from table_inv");
             List<food_item> tempitems = new List<food_item>();
             ITEMID.Clear();

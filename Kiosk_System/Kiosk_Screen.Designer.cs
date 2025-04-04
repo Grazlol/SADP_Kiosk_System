@@ -285,6 +285,7 @@
             this.food_set8.TabIndex = 62;
             this.food_set8.Visible = false;
             this.food_set8.Click += new System.EventHandler(this.SELECT_INDEX_8);
+            this.food_set8.Paint += new System.Windows.Forms.PaintEventHandler(this.food_set8_Paint);
             // 
             // foodpfp8
             // 
@@ -634,7 +635,7 @@
             this.foodpfp6.Name = "foodpfp6";
             this.foodpfp6.Size = new System.Drawing.Size(138, 138);
             this.foodpfp6.TabIndex = 19;
-            this.foodpfp6.Click += new System.EventHandler(this.SELECT_INDEX_7);
+            this.foodpfp6.Click += new System.EventHandler(this.SELECT_INDEX_6);
             this.foodpfp6.Paint += new System.Windows.Forms.PaintEventHandler(this.foodpfp6_Paint);
             // 
             // food_name6
