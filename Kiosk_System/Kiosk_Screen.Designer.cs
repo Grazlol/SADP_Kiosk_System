@@ -38,42 +38,50 @@
             this.logo_px = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
+            this.selectedOrders = new System.Windows.Forms.Label();
             this.proceed_btn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.PrevPage = new System.Windows.Forms.Button();
             this.food_set8 = new System.Windows.Forms.Panel();
+            this.amt8 = new System.Windows.Forms.Label();
             this.foodpfp8 = new System.Windows.Forms.Panel();
             this.food_name8 = new System.Windows.Forms.Label();
             this.food_price8 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.PageLabel = new System.Windows.Forms.Label();
             this.food_set2 = new System.Windows.Forms.Panel();
+            this.amt2 = new System.Windows.Forms.Label();
             this.foodpfp2 = new System.Windows.Forms.Panel();
             this.food_name2 = new System.Windows.Forms.Label();
             this.food_price2 = new System.Windows.Forms.Label();
             this.NextPage = new System.Windows.Forms.Button();
             this.food_set1 = new System.Windows.Forms.Panel();
+            this.amt1 = new System.Windows.Forms.Label();
             this.foodpfp1 = new System.Windows.Forms.Panel();
             this.food_name1 = new System.Windows.Forms.Label();
             this.food_price1 = new System.Windows.Forms.Label();
             this.food_set4 = new System.Windows.Forms.Panel();
+            this.amt4 = new System.Windows.Forms.Label();
             this.foodpfp4 = new System.Windows.Forms.Panel();
             this.food_name4 = new System.Windows.Forms.Label();
             this.food_price4 = new System.Windows.Forms.Label();
             this.food_set5 = new System.Windows.Forms.Panel();
+            this.amt5 = new System.Windows.Forms.Label();
             this.foodpfp5 = new System.Windows.Forms.Panel();
             this.food_name5 = new System.Windows.Forms.Label();
             this.food_price5 = new System.Windows.Forms.Label();
             this.food_set7 = new System.Windows.Forms.Panel();
+            this.amt7 = new System.Windows.Forms.Label();
             this.foodpfp7 = new System.Windows.Forms.Panel();
             this.food_name7 = new System.Windows.Forms.Label();
             this.food_price7 = new System.Windows.Forms.Label();
             this.food_set6 = new System.Windows.Forms.Panel();
+            this.amt6 = new System.Windows.Forms.Label();
             this.foodpfp6 = new System.Windows.Forms.Panel();
             this.food_name6 = new System.Windows.Forms.Label();
             this.food_price6 = new System.Windows.Forms.Label();
             this.food_set3 = new System.Windows.Forms.Panel();
+            this.amt3 = new System.Windows.Forms.Label();
             this.foodpfp3 = new System.Windows.Forms.Panel();
             this.food_name3 = new System.Windows.Forms.Label();
             this.food_price3 = new System.Windows.Forms.Label();
@@ -212,23 +220,23 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.LightGray;
-            this.panel9.Controls.Add(this.label27);
+            this.panel9.Controls.Add(this.selectedOrders);
             this.panel9.Controls.Add(this.proceed_btn);
             this.panel9.Location = new System.Drawing.Point(17, 503);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(821, 65);
             this.panel9.TabIndex = 22;
             // 
-            // label27
+            // selectedOrders
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(12, 21);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(173, 22);
-            this.label27.TabIndex = 55;
-            this.label27.Text = "# selected order/s";
+            this.selectedOrders.AutoSize = true;
+            this.selectedOrders.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedOrders.Location = new System.Drawing.Point(12, 21);
+            this.selectedOrders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.selectedOrders.Name = "selectedOrders";
+            this.selectedOrders.Size = new System.Drawing.Size(173, 22);
+            this.selectedOrders.TabIndex = 55;
+            this.selectedOrders.Text = "# selected order/s";
             // 
             // proceed_btn
             // 
@@ -276,6 +284,7 @@
             // 
             this.food_set8.BackColor = System.Drawing.Color.LightGray;
             this.food_set8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set8.Controls.Add(this.amt8);
             this.food_set8.Controls.Add(this.foodpfp8);
             this.food_set8.Controls.Add(this.food_name8);
             this.food_set8.Controls.Add(this.food_price8);
@@ -286,6 +295,18 @@
             this.food_set8.Visible = false;
             this.food_set8.Click += new System.EventHandler(this.SELECT_INDEX_8);
             this.food_set8.Paint += new System.Windows.Forms.PaintEventHandler(this.food_set8_Paint);
+            // 
+            // amt8
+            // 
+            this.amt8.AutoSize = true;
+            this.amt8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt8.ForeColor = System.Drawing.Color.Red;
+            this.amt8.Location = new System.Drawing.Point(159, 10);
+            this.amt8.Name = "amt8";
+            this.amt8.Size = new System.Drawing.Size(26, 28);
+            this.amt8.TabIndex = 32;
+            this.amt8.Text = "2\r\n";
+            this.amt8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // foodpfp8
             // 
@@ -350,6 +371,7 @@
             // 
             this.food_set2.BackColor = System.Drawing.Color.LightGray;
             this.food_set2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set2.Controls.Add(this.amt2);
             this.food_set2.Controls.Add(this.foodpfp2);
             this.food_set2.Controls.Add(this.food_name2);
             this.food_set2.Controls.Add(this.food_price2);
@@ -360,6 +382,18 @@
             this.food_set2.Visible = false;
             this.food_set2.Click += new System.EventHandler(this.SELECT_INDEX_2);
             this.food_set2.Paint += new System.Windows.Forms.PaintEventHandler(this.food_set2_Paint);
+            // 
+            // amt2
+            // 
+            this.amt2.AutoSize = true;
+            this.amt2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt2.ForeColor = System.Drawing.Color.Red;
+            this.amt2.Location = new System.Drawing.Point(159, 10);
+            this.amt2.Name = "amt2";
+            this.amt2.Size = new System.Drawing.Size(26, 28);
+            this.amt2.TabIndex = 26;
+            this.amt2.Text = "2\r\n";
+            this.amt2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // foodpfp2
             // 
@@ -412,15 +446,30 @@
             // 
             this.food_set1.BackColor = System.Drawing.Color.LightGray;
             this.food_set1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set1.Controls.Add(this.amt1);
             this.food_set1.Controls.Add(this.foodpfp1);
             this.food_set1.Controls.Add(this.food_name1);
             this.food_set1.Controls.Add(this.food_price1);
+            this.food_set1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.food_set1.Location = new System.Drawing.Point(3, 3);
             this.food_set1.Name = "food_set1";
             this.food_set1.Size = new System.Drawing.Size(200, 208);
             this.food_set1.TabIndex = 55;
             this.food_set1.Click += new System.EventHandler(this.SELECT_INDEX_1);
             this.food_set1.Paint += new System.Windows.Forms.PaintEventHandler(this.food_set1_Paint);
+            // 
+            // amt1
+            // 
+            this.amt1.AutoSize = true;
+            this.amt1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt1.ForeColor = System.Drawing.Color.Red;
+            this.amt1.Location = new System.Drawing.Point(159, 10);
+            this.amt1.Name = "amt1";
+            this.amt1.Size = new System.Drawing.Size(26, 28);
+            this.amt1.TabIndex = 25;
+            this.amt1.Text = "2\r\n";
+            this.amt1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.amt1.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // foodpfp1
             // 
@@ -463,6 +512,7 @@
             // 
             this.food_set4.BackColor = System.Drawing.Color.LightGray;
             this.food_set4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set4.Controls.Add(this.amt4);
             this.food_set4.Controls.Add(this.foodpfp4);
             this.food_set4.Controls.Add(this.food_name4);
             this.food_set4.Controls.Add(this.food_price4);
@@ -472,6 +522,18 @@
             this.food_set4.TabIndex = 58;
             this.food_set4.Visible = false;
             this.food_set4.Click += new System.EventHandler(this.SELECT_INDEX_4);
+            // 
+            // amt4
+            // 
+            this.amt4.AutoSize = true;
+            this.amt4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt4.ForeColor = System.Drawing.Color.Red;
+            this.amt4.Location = new System.Drawing.Point(159, 10);
+            this.amt4.Name = "amt4";
+            this.amt4.Size = new System.Drawing.Size(26, 28);
+            this.amt4.TabIndex = 28;
+            this.amt4.Text = "2\r\n";
+            this.amt4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // foodpfp4
             // 
@@ -513,6 +575,7 @@
             // 
             this.food_set5.BackColor = System.Drawing.Color.LightGray;
             this.food_set5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set5.Controls.Add(this.amt5);
             this.food_set5.Controls.Add(this.foodpfp5);
             this.food_set5.Controls.Add(this.food_name5);
             this.food_set5.Controls.Add(this.food_price5);
@@ -522,6 +585,18 @@
             this.food_set5.TabIndex = 59;
             this.food_set5.Visible = false;
             this.food_set5.Click += new System.EventHandler(this.SELECT_INDEX_5);
+            // 
+            // amt5
+            // 
+            this.amt5.AutoSize = true;
+            this.amt5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt5.ForeColor = System.Drawing.Color.Red;
+            this.amt5.Location = new System.Drawing.Point(159, 10);
+            this.amt5.Name = "amt5";
+            this.amt5.Size = new System.Drawing.Size(26, 28);
+            this.amt5.TabIndex = 29;
+            this.amt5.Text = "2\r\n";
+            this.amt5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // foodpfp5
             // 
@@ -563,6 +638,7 @@
             // 
             this.food_set7.BackColor = System.Drawing.Color.LightGray;
             this.food_set7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set7.Controls.Add(this.amt7);
             this.food_set7.Controls.Add(this.foodpfp7);
             this.food_set7.Controls.Add(this.food_name7);
             this.food_set7.Controls.Add(this.food_price7);
@@ -572,6 +648,18 @@
             this.food_set7.TabIndex = 61;
             this.food_set7.Visible = false;
             this.food_set7.Click += new System.EventHandler(this.SELECT_INDEX_7);
+            // 
+            // amt7
+            // 
+            this.amt7.AutoSize = true;
+            this.amt7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt7.ForeColor = System.Drawing.Color.Red;
+            this.amt7.Location = new System.Drawing.Point(159, 10);
+            this.amt7.Name = "amt7";
+            this.amt7.Size = new System.Drawing.Size(26, 28);
+            this.amt7.TabIndex = 31;
+            this.amt7.Text = "2\r\n";
+            this.amt7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // foodpfp7
             // 
@@ -613,6 +701,7 @@
             // 
             this.food_set6.BackColor = System.Drawing.Color.LightGray;
             this.food_set6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set6.Controls.Add(this.amt6);
             this.food_set6.Controls.Add(this.foodpfp6);
             this.food_set6.Controls.Add(this.food_name6);
             this.food_set6.Controls.Add(this.food_price6);
@@ -622,6 +711,18 @@
             this.food_set6.TabIndex = 60;
             this.food_set6.Visible = false;
             this.food_set6.Click += new System.EventHandler(this.SELECT_INDEX_6);
+            // 
+            // amt6
+            // 
+            this.amt6.AutoSize = true;
+            this.amt6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt6.ForeColor = System.Drawing.Color.Red;
+            this.amt6.Location = new System.Drawing.Point(159, 10);
+            this.amt6.Name = "amt6";
+            this.amt6.Size = new System.Drawing.Size(26, 28);
+            this.amt6.TabIndex = 30;
+            this.amt6.Text = "2\r\n";
+            this.amt6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // foodpfp6
             // 
@@ -664,6 +765,7 @@
             // 
             this.food_set3.BackColor = System.Drawing.Color.LightGray;
             this.food_set3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.food_set3.Controls.Add(this.amt3);
             this.food_set3.Controls.Add(this.foodpfp3);
             this.food_set3.Controls.Add(this.food_name3);
             this.food_set3.Controls.Add(this.food_price3);
@@ -673,6 +775,18 @@
             this.food_set3.TabIndex = 57;
             this.food_set3.Visible = false;
             this.food_set3.Click += new System.EventHandler(this.SELECT_INDEX_3);
+            // 
+            // amt3
+            // 
+            this.amt3.AutoSize = true;
+            this.amt3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amt3.ForeColor = System.Drawing.Color.Red;
+            this.amt3.Location = new System.Drawing.Point(159, 10);
+            this.amt3.Name = "amt3";
+            this.amt3.Size = new System.Drawing.Size(26, 28);
+            this.amt3.TabIndex = 27;
+            this.amt3.Text = "2\r\n";
+            this.amt3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // foodpfp3
             // 
@@ -771,7 +885,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label selectedOrders;
         private System.Windows.Forms.Panel food_set1;
         private System.Windows.Forms.Panel food_set8;
         private System.Windows.Forms.Panel foodpfp8;
@@ -804,6 +918,14 @@
         private System.Windows.Forms.Label PageLabel;
         private System.Windows.Forms.Button NextPage;
         private System.Windows.Forms.Button PrevPage;
+        private System.Windows.Forms.Label amt1;
+        private System.Windows.Forms.Label amt8;
+        private System.Windows.Forms.Label amt2;
+        private System.Windows.Forms.Label amt4;
+        private System.Windows.Forms.Label amt5;
+        private System.Windows.Forms.Label amt7;
+        private System.Windows.Forms.Label amt6;
+        private System.Windows.Forms.Label amt3;
     }
 }
 

@@ -22,6 +22,7 @@ namespace Kiosk_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Kiosk());
+            KSession.NewSession();
         }
     }
 
@@ -40,9 +41,11 @@ namespace Kiosk_System
         public static string user;
         public static bool isTakeout;
 
+        private static bool isRunning;
         private static List<String> ITEMID = new List<string>();
         public static void NewSession()//Resets the current session to a new user
         {
+
             CHECK_OUT = new Checkout_Screen();
             KIOSK = new Kiosk_Screen();
             QUANTITY = new Quantity_Screen();
@@ -60,11 +63,8 @@ namespace Kiosk_System
 
             nextwindow("START");
             refresh();
-        }
 
-        public static void refresh()//Refreshes the current session
-        {
-            
+
             DataTable rawitems = readQuery("select * from table_inv");
             List<food_item> tempitems = new List<food_item>();
             ITEMID.Clear();
@@ -83,19 +83,25 @@ namespace Kiosk_System
                 {
                     tempitems[tempitems.Count - 1].it_icon = new Bitmap(row.ItemArray[4].ToString());
                 }
-                
+
             }
 
             current_items = tempitems.ToArray();
-
             Console.WriteLine(current_items.Length);
+            isRunning = true;
+        }
 
-
-            CHECK_OUT._ready();
-            KIOSK._ready();
-            QUANTITY._ready();
-            START._ready();
-            VIEW_ORDER._ready();
+        public static void refresh()//Refreshes the current session
+        {
+            if (isRunning)
+            {
+                CHECK_OUT._ready();
+                KIOSK._ready();
+                QUANTITY._ready();
+                START._ready();
+                VIEW_ORDER._ready();
+            }
+            
         }
 
         public static void nextwindow(string index = "CHECK_OUT"){
@@ -156,7 +162,7 @@ namespace Kiosk_System
         private static string Last_Created_ID = "";
 
         private static MySqlConnection con = new MySqlConnection(database_properties);
-        public static void query(string SQLCOMMAND)//Performs a commmand through a string
+        public static void query(string SQLCOMMAND)//INPUT 
         {
             
             con.Open();
@@ -169,7 +175,7 @@ namespace Kiosk_System
             catch (Exception e) { return; }
             con.Close();
         }
-        public static DataTable readQuery(string Query)
+        public static DataTable readQuery(string Query)//OUTPUT
         {
             DataTable dt = new DataTable();
             con.Open();
@@ -205,11 +211,8 @@ namespace Kiosk_System
         public string it_code;
         public Image it_icon;
         public float it_price;
-
-        public bool is_avail()
-        {
-            return true;
-        }
+        public int it_count;
+        public int it_bought = 0;
     }
 
     public class Kiosk_Page
@@ -220,9 +223,10 @@ namespace Kiosk_System
 
     public class Order
     {
+        public string orderID;
         public string orderName;
-        public string orderCate;
         public int OrderAmount;
         public float OrderPrice;
+        
     }
 }

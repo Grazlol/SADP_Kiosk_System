@@ -16,7 +16,8 @@ namespace Kiosk_System
         public int current_page = 1;
         public string current_cate = "B";
         public Kiosk_Page[] page_glossary;
-        public int quantity_window_index = 1; 
+        public int quantity_window_index = 1;
+        
         public Kiosk_Screen()
         {
             InitializeComponent();
@@ -36,10 +37,13 @@ namespace Kiosk_System
             List<food_item> tempitems = new List<food_item>();
             List<Kiosk_Page> tempages = new List<Kiosk_Page>();
 
+            int Itemsquantity = 0;
+
             Panel[] foodIcon = { foodpfp1, foodpfp2, foodpfp3, foodpfp4, foodpfp5, foodpfp6, foodpfp7, foodpfp8 };
             Label[] foodName = { food_name1, food_name2, food_name3, food_name4, food_name5, food_name6, food_name7, food_name8 };
             Panel[] foodMaster = { food_set1, food_set2, food_set3, food_set4, food_set5, food_set6, food_set7, food_set8 };
             Label[] foodPrice = { food_price1, food_price2, food_price3, food_price4, food_price5, food_price6, food_price7, food_price8 };
+            Label[] foodamount = { amt1, amt2, amt3, amt4, amt5, amt6, amt7, amt8 };
 
             foreach (Panel p in foodMaster)
             {
@@ -81,12 +85,26 @@ namespace Kiosk_System
                 foodIcon[i].BackgroundImage = page_glossary[current_page - 1].item_set[i].it_icon;
                 foodName[i].Text = page_glossary[current_page - 1].item_set[i].it_name;
                 foodPrice[i].Text = page_glossary[current_page - 1].item_set[i].it_price.ToString(".00");
+                foodamount[i].Text = page_glossary[current_page - 1].item_set[i].it_bought.ToString(); 
+                if(page_glossary[current_page - 1].item_set[i].it_bought < 1)
+                {
+                    foodamount[i].Visible = false;
+                } else
+                {
+                    foodamount[i].Visible = true;
+                }
             }
+
+            foreach (food_item it_crowd in KSession.current_items)
+            {
+                Itemsquantity += it_crowd.it_bought;
+            }
+            selectedOrders.Text = Itemsquantity.ToString() + " Selected Order/s";
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -258,7 +276,19 @@ namespace Kiosk_System
         {
 
         }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 
+    public class tempOrder
+    {
+        public string itemcode;
+        public string itemname;
+        public string itemqty;
+        public string itemprice;
+    }
     
 }

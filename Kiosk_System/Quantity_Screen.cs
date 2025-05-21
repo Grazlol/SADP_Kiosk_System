@@ -20,9 +20,7 @@ namespace Kiosk_System
         }
         public void _ready()
         {
-            Console.WriteLine(KSession.KIOSK.page_glossary.Length);
-            Console.WriteLine(KSession.KIOSK.page_glossary[KSession.KIOSK.current_page - 1].item_set.Length.ToString());
-            Console.WriteLine(KSession.KIOSK.quantity_window_index - 1);
+
             kiosk_item = KSession.KIOSK.page_glossary[KSession.KIOSK.current_page - 1].item_set[KSession.KIOSK.quantity_window_index - 1];
             quantity = 1;
             labelqty.Text = quantity.ToString();
@@ -41,7 +39,32 @@ namespace Kiosk_System
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            kiosk_item.it_bought = quantity;
+            Console.WriteLine(kiosk_item.it_bought.ToString());
+            if(quantity < 1)
+            {
+                for(int apples = 0; true; apples++)
+                {
+                    Order ord = KSession.VIEW_ORDER.Orders[apples];
+                    if (ord.orderID == kiosk_item.it_code)
+                    {
+                        KSession.VIEW_ORDER.Orders.Remove(ord);
+                        break;
+                    }
+                }
+                MessageBox.Show("Item Removed from Cart");
+                
+            } else
+            {
+                MessageBox.Show("Item Added to Cart");
+                Order order = new Order();
+                order.orderID = kiosk_item.it_code;
+                order.orderName = kiosk_item.it_name;
+                order.OrderAmount = quantity;
+                order.OrderPrice = (kiosk_item.it_price * quantity);
+                KSession.VIEW_ORDER.Orders.Add(order);
+            }
+            KSession.nextwindow("KIOSK");
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -83,7 +106,7 @@ namespace Kiosk_System
 
         private void sub_quantity(object sender, EventArgs e)
         {
-            if (quantity > 1) {
+            if (quantity > 0) {
 
                 quantity--;
 
