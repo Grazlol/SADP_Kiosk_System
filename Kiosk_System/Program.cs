@@ -35,6 +35,7 @@ namespace Kiosk_System
         public static Quantity_Screen QUANTITY;
         public static Start_Screen START;
         public static ViewOrder_Screen VIEW_ORDER;
+        public static List<string> CUSTOMER_ACTIVE_SESSIONS = new List<string>();
         public static Kiosk viewport = new Kiosk();
         public static food_item[] current_items;
         public static string currentTime;
@@ -87,12 +88,12 @@ namespace Kiosk_System
             }
 
             current_items = tempitems.ToArray();
-            Console.WriteLine(current_items.Length);
             isRunning = true;
         }
 
         public static void refresh()//Refreshes the current session
         {
+            Console.WriteLine("Trying to Refresh");
             if (isRunning)
             {
                 CHECK_OUT._ready();
@@ -100,6 +101,7 @@ namespace Kiosk_System
                 QUANTITY._ready();
                 START._ready();
                 VIEW_ORDER._ready();
+                Console.WriteLine("Program Refresh");
             }
             
         }
@@ -172,7 +174,7 @@ namespace Kiosk_System
             {
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception e) { return; }
+            catch (Exception e) { con.Close(); Console.WriteLine(e.ToString());  return; }
             con.Close();
         }
         public static DataTable readQuery(string Query)//OUTPUT
@@ -184,7 +186,7 @@ namespace Kiosk_System
             {
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception e) { return dt; }
+            catch (Exception e) { con.Close(); Console.WriteLine(e.ToString()); return dt; }
 
 
 

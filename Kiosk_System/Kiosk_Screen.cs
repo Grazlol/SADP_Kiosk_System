@@ -17,6 +17,7 @@ namespace Kiosk_System
         public string current_cate = "B";
         public Kiosk_Page[] page_glossary;
         public int quantity_window_index = 1;
+
         
         public Kiosk_Screen()
         {

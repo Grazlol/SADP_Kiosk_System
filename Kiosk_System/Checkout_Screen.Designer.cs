@@ -33,12 +33,12 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DineOut = new System.Windows.Forms.PictureBox();
+            this.DineIn = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DineOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DineIn)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,8 +70,8 @@
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.Controls.Add(this.pictureBox2);
-            this.panel7.Controls.Add(this.pictureBox1);
+            this.panel7.Controls.Add(this.DineOut);
+            this.panel7.Controls.Add(this.DineIn);
             this.panel7.Controls.Add(this.label1);
             this.panel7.Location = new System.Drawing.Point(16, 23);
             this.panel7.Name = "panel7";
@@ -100,25 +100,27 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Dine-In";
             // 
-            // pictureBox2
+            // DineOut
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox2.Location = new System.Drawing.Point(584, 181);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            this.DineOut.BackColor = System.Drawing.Color.LightGray;
+            this.DineOut.Location = new System.Drawing.Point(584, 181);
+            this.DineOut.Margin = new System.Windows.Forms.Padding(2);
+            this.DineOut.Name = "DineOut";
+            this.DineOut.Size = new System.Drawing.Size(200, 200);
+            this.DineOut.TabIndex = 15;
+            this.DineOut.TabStop = false;
+            this.DineOut.Click += new System.EventHandler(this.DineOut_Click);
             // 
-            // pictureBox1
+            // DineIn
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox1.Location = new System.Drawing.Point(196, 181);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.DineIn.BackColor = System.Drawing.Color.LightGray;
+            this.DineIn.Location = new System.Drawing.Point(196, 181);
+            this.DineIn.Margin = new System.Windows.Forms.Padding(2);
+            this.DineIn.Name = "DineIn";
+            this.DineIn.Size = new System.Drawing.Size(200, 200);
+            this.DineIn.TabIndex = 14;
+            this.DineIn.TabStop = false;
+            this.DineIn.Click += new System.EventHandler(this.DineIn_Click);
             // 
             // Checkout_Screen
             // 
@@ -135,8 +137,8 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DineOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DineIn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,8 +147,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox DineOut;
+        private System.Windows.Forms.PictureBox DineIn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
     }

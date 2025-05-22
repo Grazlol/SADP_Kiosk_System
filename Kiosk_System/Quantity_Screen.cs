@@ -40,7 +40,6 @@ namespace Kiosk_System
         private void button6_Click(object sender, EventArgs e)
         {
             kiosk_item.it_bought = quantity;
-            Console.WriteLine(kiosk_item.it_bought.ToString());
             if(quantity < 1)
             {
                 for(int apples = 0; true; apples++)
@@ -62,7 +61,21 @@ namespace Kiosk_System
                 order.orderName = kiosk_item.it_name;
                 order.OrderAmount = quantity;
                 order.OrderPrice = (kiosk_item.it_price * quantity);
-                KSession.VIEW_ORDER.Orders.Add(order);
+                bool already_exists = false;
+                for (int ordindex = 0; ordindex < KSession.VIEW_ORDER.Orders.Count; ordindex++)
+                {
+                    if (order.orderID == KSession.VIEW_ORDER.Orders[ordindex].orderID)
+                    {
+                        KSession.VIEW_ORDER.Orders[ordindex] = order;
+                        already_exists = true;
+                        break;
+                    }
+                }
+                if (!already_exists)
+                {
+                    KSession.VIEW_ORDER.Orders.Add(order);
+                }
+                
             }
             KSession.nextwindow("KIOSK");
         }

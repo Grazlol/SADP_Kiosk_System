@@ -86,7 +86,7 @@
             this.food_name3 = new System.Windows.Forms.Label();
             this.food_price3 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.TotalPrice = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -104,7 +104,7 @@
             this.food_set6.SuspendLayout();
             this.food_set3.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.TotalPrice.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -819,7 +819,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.LightGray;
-            this.panel9.Controls.Add(this.panel8);
+            this.panel9.Controls.Add(this.TotalPrice);
             this.panel9.Controls.Add(this.button2);
             this.panel9.Controls.Add(this.proceed_btn);
             this.panel9.Location = new System.Drawing.Point(4, 542);
@@ -827,17 +827,17 @@
             this.panel9.Size = new System.Drawing.Size(987, 134);
             this.panel9.TabIndex = 22;
             // 
-            // panel8
+            // TotalPrice
             // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label25);
-            this.panel8.Controls.Add(this.label27);
-            this.panel8.Location = new System.Drawing.Point(19, 9);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(284, 37);
-            this.panel8.TabIndex = 71;
+            this.TotalPrice.BackColor = System.Drawing.Color.White;
+            this.TotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TotalPrice.Controls.Add(this.label25);
+            this.TotalPrice.Controls.Add(this.label27);
+            this.TotalPrice.Location = new System.Drawing.Point(19, 9);
+            this.TotalPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.TotalPrice.Name = "TotalPrice";
+            this.TotalPrice.Size = new System.Drawing.Size(939, 37);
+            this.TotalPrice.TabIndex = 71;
             // 
             // label25
             // 
@@ -921,8 +921,8 @@
             this.food_set3.ResumeLayout(false);
             this.food_set3.PerformLayout();
             this.panel9.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.TotalPrice.ResumeLayout(false);
+            this.TotalPrice.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -935,7 +935,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel TotalPrice;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button PrevPage;
         private System.Windows.Forms.Panel food_set8;
