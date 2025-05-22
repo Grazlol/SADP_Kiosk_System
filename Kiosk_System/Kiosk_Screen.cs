@@ -101,6 +101,15 @@ namespace Kiosk_System
                 Itemsquantity += it_crowd.it_bought;
             }
             selectedOrders.Text = Itemsquantity.ToString() + " Selected Order/s";
+
+            if(Itemsquantity >= 1)
+            {
+                proceed_btn.Enabled = true;
+            }
+            else
+            {
+                proceed_btn.Enabled = false;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -230,6 +239,16 @@ namespace Kiosk_System
 
         private void burger(object sender, EventArgs e)
         {
+            lbl_burger.Visible = true;
+            lbl_chicken.Visible = false;
+            lbl_fish.Visible = false;
+            lbl_sides.Visible = false;
+            lbl_dessert.Visible = false;
+            menu_button1.BackColor = Color.DarkOrange;
+            button1.BackColor = Color.LavenderBlush;
+            button2.BackColor = Color.LavenderBlush;
+            button3.BackColor = Color.LavenderBlush;
+            button4.BackColor = Color.LavenderBlush;
             quantity_window_index = 1;
             current_cate = "B";
             KSession.refresh();
@@ -237,6 +256,16 @@ namespace Kiosk_System
 
         private void chicken(object sender, EventArgs e)
         {
+            lbl_burger.Visible = false;
+            lbl_chicken.Visible = true;
+            lbl_fish.Visible = false;
+            lbl_sides.Visible = false;
+            lbl_dessert.Visible = false;
+            menu_button1.BackColor = Color.LavenderBlush;
+            button1.BackColor = Color.DarkOrange;
+            button2.BackColor = Color.LavenderBlush;
+            button3.BackColor = Color.LavenderBlush;
+            button4.BackColor = Color.LavenderBlush;
             quantity_window_index = 1;
             current_cate = "C";
             KSession.refresh();
@@ -244,6 +273,16 @@ namespace Kiosk_System
 
         private void fish(object sender, EventArgs e)
         {
+            lbl_burger.Visible = false;
+            lbl_chicken.Visible = false;
+            lbl_fish.Visible = true;
+            lbl_sides.Visible = false;
+            lbl_dessert.Visible = false;
+            menu_button1.BackColor = Color.LavenderBlush;
+            button1.BackColor = Color.LavenderBlush;
+            button2.BackColor = Color.DarkOrange;
+            button3.BackColor = Color.LavenderBlush;
+            button4.BackColor = Color.LavenderBlush;
             quantity_window_index = 1;
             current_cate = "F";
             KSession.refresh();
@@ -251,6 +290,16 @@ namespace Kiosk_System
 
         private void sides(object sender, EventArgs e)
         {
+            lbl_burger.Visible = false;
+            lbl_chicken.Visible = false;
+            lbl_fish.Visible = false;
+            lbl_sides.Visible = true;
+            lbl_dessert.Visible = false;
+            menu_button1.BackColor = Color.LavenderBlush;
+            button1.BackColor = Color.LavenderBlush;
+            button2.BackColor = Color.LavenderBlush;
+            button3.BackColor = Color.DarkOrange;
+            button4.BackColor = Color.LavenderBlush;
             quantity_window_index = 1;
             current_cate = "S";
             KSession.refresh();
@@ -258,6 +307,16 @@ namespace Kiosk_System
 
         private void dessert(object sender, EventArgs e)
         {
+            lbl_burger.Visible = false;
+            lbl_chicken.Visible = false;
+            lbl_fish.Visible = false;
+            lbl_sides.Visible = false;
+            lbl_dessert.Visible = true;
+            menu_button1.BackColor = Color.LavenderBlush;
+            button1.BackColor = Color.LavenderBlush;
+            button2.BackColor = Color.LavenderBlush;
+            button3.BackColor = Color.LavenderBlush;
+            button4.BackColor = Color.DarkOrange;
             quantity_window_index = 1;
             current_cate = "D";
             KSession.refresh();
@@ -344,6 +403,36 @@ namespace Kiosk_System
         }
 
         private void amt4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectedOrders_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HOA_Logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

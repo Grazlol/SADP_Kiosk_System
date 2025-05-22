@@ -12,6 +12,9 @@ namespace Kiosk_System
 {
     public partial class Kiosk : Form
     {
+        public int takeoutNo = 0;
+        public int DineinNo = 0;
+        
         public Kiosk()
         {
             InitializeComponent();

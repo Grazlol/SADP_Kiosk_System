@@ -83,9 +83,18 @@ namespace Kiosk_System
                 }
 
                 KSession.query("INSERT INTO table_trhist (ev_time, or_list, or_type, to_pric, tr_code, uid) VALUES('" + DateTime.UtcNow + " UTC', '" + OrderList + "', '" + Order_Type + "', " + KSession.VIEW_ORDER.TOTALORDERPRICE.ToString(".00") + ", '" + GenerateCode() + "', " + user_session + ");");
-                MessageBox.Show("<<RECEIPT TEXT>>", "RECEIPT");
-                KSession.NewSession();
-
+                if(Order_Type == "DINEIN")
+                {
+                    //DineinNo = DineinNo + 1;
+                    MessageBox.Show("Order Ticket Number: ", "Dine In");
+                    KSession.nextwindow("START");
+                    KSession.NewSession();
+                } else if (Order_Type == "TAKEOUT")
+                {
+                    MessageBox.Show("Order Ticket Number: ", "Take Out");
+                    KSession.nextwindow("START");
+                    KSession.NewSession();
+                }
 
             }
         }
@@ -138,8 +147,9 @@ namespace Kiosk_System
 
         private void DineOut_Click(object sender, EventArgs e)
         {
-            Order_Type = "DINEOUT";
+            Order_Type = "TAKEOUT";
             perform_order();
+;
         }
     }
 }

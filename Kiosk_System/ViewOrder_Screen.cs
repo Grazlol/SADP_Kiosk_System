@@ -216,6 +216,26 @@ namespace Kiosk_System
             KSession.refresh();
       
         }
+
+        private void food_set6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void food_set1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_total_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public class vieworder_singlepage
     {

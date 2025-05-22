@@ -46,6 +46,14 @@ namespace Kiosk_System
         private static List<String> ITEMID = new List<string>();
         public static void NewSession()//Resets the current session to a new user
         {
+            if (isRunning)
+            {
+                CHECK_OUT.Dispose();
+                KIOSK.Dispose();
+                QUANTITY.Dispose();
+                START.Dispose();
+                VIEW_ORDER.Dispose();
+            }
 
             CHECK_OUT = new Checkout_Screen();
             KIOSK = new Kiosk_Screen();

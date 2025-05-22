@@ -41,6 +41,7 @@
             this.label_name = new System.Windows.Forms.Label();
             this.labelqty = new System.Windows.Forms.Label();
             this.food_item1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -49,11 +50,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 22);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(16, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 37);
+            this.label1.Size = new System.Drawing.Size(298, 40);
             this.label1.TabIndex = 13;
             this.label1.Text = "Choose Quantity";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -61,6 +63,7 @@
             // panel6
             // 
             this.panel6.AutoScroll = true;
+            this.panel6.BackColor = System.Drawing.Color.Coral;
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.label1);
@@ -73,9 +76,10 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.LightGray;
+            this.panel9.BackColor = System.Drawing.Color.SeaShell;
             this.panel9.Controls.Add(this.button2);
             this.panel9.Controls.Add(this.proceed_btn);
+            this.panel9.ForeColor = System.Drawing.Color.Crimson;
             this.panel9.Location = new System.Drawing.Point(16, 470);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(457, 65);
@@ -106,7 +110,8 @@
             // panel7
             // 
             this.panel7.AutoScroll = true;
-            this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel7.BackColor = System.Drawing.Color.SeaShell;
+            this.panel7.Controls.Add(this.label2);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.addqty);
             this.panel7.Controls.Add(this.label_price);
@@ -123,6 +128,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Crimson;
             this.label4.Location = new System.Drawing.Point(187, 308);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -144,11 +150,12 @@
             // label_price
             // 
             this.label_price.AutoSize = true;
-            this.label_price.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_price.Location = new System.Drawing.Point(124, 253);
+            this.label_price.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_price.ForeColor = System.Drawing.Color.Crimson;
+            this.label_price.Location = new System.Drawing.Point(113, 277);
             this.label_price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_price.Name = "label_price";
-            this.label_price.Size = new System.Drawing.Size(58, 22);
+            this.label_price.Size = new System.Drawing.Size(74, 28);
             this.label_price.TabIndex = 24;
             this.label_price.Text = "Price";
             // 
@@ -166,11 +173,12 @@
             // label_name
             // 
             this.label_name.AutoSize = true;
-            this.label_name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_name.Location = new System.Drawing.Point(123, 225);
+            this.label_name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_name.ForeColor = System.Drawing.Color.Crimson;
+            this.label_name.Location = new System.Drawing.Point(115, 225);
             this.label_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_name.Name = "label_name";
-            this.label_name.Size = new System.Drawing.Size(142, 28);
+            this.label_name.Size = new System.Drawing.Size(222, 43);
             this.label_name.TabIndex = 14;
             this.label_name.Text = "Food Name";
             // 
@@ -178,6 +186,7 @@
             // 
             this.labelqty.AutoSize = true;
             this.labelqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelqty.ForeColor = System.Drawing.Color.Crimson;
             this.labelqty.Location = new System.Drawing.Point(221, 333);
             this.labelqty.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelqty.Name = "labelqty";
@@ -187,13 +196,25 @@
             // 
             // food_item1
             // 
-            this.food_item1.BackColor = System.Drawing.Color.White;
+            this.food_item1.BackColor = System.Drawing.Color.SeaShell;
             this.food_item1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.food_item1.Location = new System.Drawing.Point(128, 23);
             this.food_item1.Margin = new System.Windows.Forms.Padding(2);
             this.food_item1.Name = "food_item1";
             this.food_item1.Size = new System.Drawing.Size(200, 200);
             this.food_item1.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(84, 273);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 33);
+            this.label2.TabIndex = 70;
+            this.label2.Text = "₱";
             // 
             // Quantity_Screen
             // 
@@ -231,6 +252,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button subqty;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
     }
 }
 
