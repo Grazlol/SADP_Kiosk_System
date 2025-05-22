@@ -41,6 +41,7 @@
             this.Name = "Kiosk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this._ready);
             this.ResumeLayout(false);
 

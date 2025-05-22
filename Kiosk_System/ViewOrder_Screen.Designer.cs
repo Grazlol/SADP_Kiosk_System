@@ -125,10 +125,10 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.label1);
-            this.panel6.Location = new System.Drawing.Point(11, 3);
+            this.panel6.Location = new System.Drawing.Point(0, 1);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1009, 688);
+            this.panel6.Size = new System.Drawing.Size(1440, 890);
             this.panel6.TabIndex = 18;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
@@ -152,7 +152,7 @@
             this.panel7.Controls.Add(this.food_set3);
             this.panel7.Location = new System.Drawing.Point(4, 46);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(987, 494);
+            this.panel7.Size = new System.Drawing.Size(1433, 494);
             this.panel7.TabIndex = 23;
             // 
             // food_set10
@@ -818,13 +818,13 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.LightGray;
+            this.panel9.BackColor = System.Drawing.Color.SandyBrown;
             this.panel9.Controls.Add(this.TotalPrice);
             this.panel9.Controls.Add(this.button2);
             this.panel9.Controls.Add(this.proceed_btn);
-            this.panel9.Location = new System.Drawing.Point(4, 542);
+            this.panel9.Location = new System.Drawing.Point(3, 542);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(987, 134);
+            this.panel9.Size = new System.Drawing.Size(1434, 345);
             this.panel9.TabIndex = 22;
             // 
             // TotalPrice
@@ -864,7 +864,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(19, 69);
+            this.button2.Location = new System.Drawing.Point(5, 284);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(198, 51);
             this.button2.TabIndex = 21;
@@ -875,7 +875,7 @@
             // proceed_btn
             // 
             this.proceed_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.proceed_btn.Location = new System.Drawing.Point(707, 69);
+            this.proceed_btn.Location = new System.Drawing.Point(1179, 284);
             this.proceed_btn.Name = "proceed_btn";
             this.proceed_btn.Size = new System.Drawing.Size(246, 51);
             this.proceed_btn.TabIndex = 20;
@@ -888,7 +888,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1031, 702);
+            this.ClientSize = new System.Drawing.Size(1440, 890);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);

@@ -282,6 +282,71 @@ namespace Kiosk_System
         {
 
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void food_set4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void food_set3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void food_set7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void food_set6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void food_set5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void amt5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amt6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amt2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amt3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amt7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amt8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amt4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class tempOrder

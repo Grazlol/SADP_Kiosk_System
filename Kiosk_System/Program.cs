@@ -82,7 +82,8 @@ namespace Kiosk_System
 
                 if (row.ItemArray[4].ToString() != "null")
                 {
-                    tempitems[tempitems.Count - 1].it_icon = new Bitmap(row.ItemArray[4].ToString());
+                    //add a query daw
+                    //tempitems[tempitems.Count - 1].it_icon = new Bitmap(row.ItemArray[4].ToString());
                 }
 
             }
