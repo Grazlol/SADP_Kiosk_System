@@ -16,6 +16,8 @@ namespace Kiosk_System
 {
     public partial class Checkout_Screen : Form
     {
+        float TOTALPRICE;
+        float TotalPricess;
         string Order_Type = "";
         public Checkout_Screen()
         {
@@ -63,9 +65,12 @@ namespace Kiosk_System
                 {
                     for (int i = 0; i < ord.OrderAmount; i++)
                     {
+                        
                         if (counter > 0)
                         {
                             OrderList += "," + ord.orderID.ToString();
+                            
+                            
                         }
                         else
                         {
@@ -90,14 +95,21 @@ namespace Kiosk_System
                     String displayeditems = "";
                     foreach(Order n in KSession.VIEW_ORDER.Orders)
                     {
-                        displayeditems += n.orderName + "\n";
+                        displayeditems += n.orderName + " x " + n.OrderAmount + "\n";
                     }
-                    MessageBox.Show("Order: \n" + displayeditems, "Dine In");
+
+                    MessageBox.Show("Order: \n" + displayeditems + "\n \n Total Price: ₱" + TotalPricess, "Dine In");
                     KSession.nextwindow("START");
                     KSession.NewSession();
                 } else if (Order_Type == "TAKEOUT")
                 {
-                    MessageBox.Show("Order Ticket Number: ", "Take Out");
+                    String displayeditems = "";
+                    foreach (Order n in KSession.VIEW_ORDER.Orders)
+                    {
+                        displayeditems += n.orderName + " x " + n.OrderAmount + "\n";
+                    }
+
+                    MessageBox.Show("Order: \n" + displayeditems + "\n \n Total Price: ₱" + TotalPricess, "Take Out");
                     KSession.nextwindow("START");
                     KSession.NewSession();
                 }
@@ -108,6 +120,21 @@ namespace Kiosk_System
         private void Form1_Load(object sender, EventArgs e)
         {
 
+                TOTALPRICE = 0;
+                foreach (Order ord in KSession.VIEW_ORDER.Orders)
+                {
+                    TOTALPRICE += ord.OrderPrice;
+                    Console.WriteLine(TOTALPRICE.ToString());
+                }
+                if (TOTALPRICE.Equals(0))
+                {
+                    TotalPricess = TOTALPRICE;
+
+                }
+                else
+                {
+                    TotalPricess = TOTALPRICE;
+                }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -156,6 +183,11 @@ namespace Kiosk_System
             Order_Type = "TAKEOUT";
             perform_order();
 ;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KSession.nextwindow("KIOSK");
         }
     }
 }

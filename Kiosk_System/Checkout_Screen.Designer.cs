@@ -31,16 +31,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.DineOut = new System.Windows.Forms.PictureBox();
-            this.DineIn = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DineOut = new System.Windows.Forms.PictureBox();
+            this.DineIn = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DineOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DineIn)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +89,59 @@
             this.panel7.Size = new System.Drawing.Size(1399, 850);
             this.panel7.TabIndex = 21;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Crimson;
+            this.label5.Location = new System.Drawing.Point(866, 565);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 37);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "to go!";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Crimson;
+            this.label6.Location = new System.Drawing.Point(771, 528);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(290, 37);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Have your Burger";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Crimson;
+            this.label4.Location = new System.Drawing.Point(473, 565);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 37);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "here!";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Coral;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1399, 163);
+            this.panel2.TabIndex = 19;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Coral;
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Location = new System.Drawing.Point(0, 696);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1399, 151);
+            this.panel1.TabIndex = 18;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -98,22 +153,6 @@
             this.label2.Size = new System.Drawing.Size(262, 37);
             this.label2.TabIndex = 16;
             this.label2.Text = "Eat your Burger";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Coral;
-            this.panel1.Location = new System.Drawing.Point(0, 696);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1399, 151);
-            this.panel1.TabIndex = 18;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Coral;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1399, 163);
-            this.panel2.TabIndex = 19;
             // 
             // DineOut
             // 
@@ -143,41 +182,16 @@
             this.DineIn.TabStop = false;
             this.DineIn.Click += new System.EventHandler(this.DineIn_Click);
             // 
-            // label4
+            // button2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Crimson;
-            this.label4.Location = new System.Drawing.Point(473, 565);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 37);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "here!";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.Location = new System.Drawing.Point(866, 565);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 37);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "to go!";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Crimson;
-            this.label6.Location = new System.Drawing.Point(771, 528);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(290, 37);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Have your Burger";
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(39, 47);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(198, 51);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Go Back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Checkout_Screen
             // 
@@ -195,6 +209,7 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DineOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DineIn)).EndInit();
             this.ResumeLayout(false);
@@ -213,6 +228,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
     }
 }
 

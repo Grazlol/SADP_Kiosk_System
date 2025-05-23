@@ -31,13 +31,15 @@ namespace Kiosk_System
             foreach (Order ord in Orders)
             {
                 TOTALORDERPRICE += ord.OrderPrice;
+                Console.WriteLine(TOTALORDERPRICE.ToString());
             }
             if (TOTALORDERPRICE.Equals(0))
             {
-                TotalPrice.Text = "Total Price: ";
+                TotalPrices.Text = "Total Price: ₱" + TOTALORDERPRICE.ToString();
+
             } else
             {
-                TotalPrice.Text = "Total Price: " + TOTALORDERPRICE.ToString(".00");
+                TotalPrices.Text = "Total Price: ₱" + TOTALORDERPRICE.ToString(".00");
             }
 
             PrevPage.Visible = true;
@@ -233,6 +235,11 @@ namespace Kiosk_System
         }
 
         private void txt_total_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
         {
 
         }
