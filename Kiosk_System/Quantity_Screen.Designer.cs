@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.proceed_btn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.addqty = new System.Windows.Forms.Button();
             this.label_price = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.label_name = new System.Windows.Forms.Label();
             this.labelqty = new System.Windows.Forms.Label();
             this.food_item1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -123,6 +123,19 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(457, 392);
             this.panel7.TabIndex = 21;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(84, 273);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 33);
+            this.label2.TabIndex = 70;
+            this.label2.Text = "₱";
             // 
             // label4
             // 
@@ -203,18 +216,6 @@
             this.food_item1.Name = "food_item1";
             this.food_item1.Size = new System.Drawing.Size(200, 200);
             this.food_item1.TabIndex = 19;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(84, 273);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 33);
-            this.label2.TabIndex = 70;
-            this.label2.Text = "₱";
             // 
             // Quantity_Screen
             // 

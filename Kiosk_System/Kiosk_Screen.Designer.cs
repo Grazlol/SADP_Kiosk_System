@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.lbl_dessert = new System.Windows.Forms.Label();
             this.lbl_sides = new System.Windows.Forms.Label();
             this.lbl_fish = new System.Windows.Forms.Label();
@@ -101,7 +102,6 @@
             this.foodpfp3 = new System.Windows.Forms.Panel();
             this.food_name3 = new System.Windows.Forms.Label();
             this.food_price3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HOA_Logo)).BeginInit();
             this.panel6.SuspendLayout();
@@ -124,7 +124,7 @@
             this.menu_button1.BackColor = System.Drawing.Color.DarkOrange;
             this.menu_button1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu_button1.Location = new System.Drawing.Point(2, 197);
-            this.menu_button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menu_button1.Margin = new System.Windows.Forms.Padding(2);
             this.menu_button1.Name = "menu_button1";
             this.menu_button1.Size = new System.Drawing.Size(130, 78);
             this.menu_button1.TabIndex = 9;
@@ -145,7 +145,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.menu_button1);
             this.panel1.Location = new System.Drawing.Point(2, 76);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 709);
             this.panel1.TabIndex = 17;
@@ -156,7 +156,7 @@
             this.HOA_Logo.BackColor = System.Drawing.Color.White;
             this.HOA_Logo.Image = ((System.Drawing.Image)(resources.GetObject("HOA_Logo.Image")));
             this.HOA_Logo.Location = new System.Drawing.Point(3, 15);
-            this.HOA_Logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HOA_Logo.Margin = new System.Windows.Forms.Padding(2);
             this.HOA_Logo.Name = "HOA_Logo";
             this.HOA_Logo.Size = new System.Drawing.Size(120, 120);
             this.HOA_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,7 +181,7 @@
             this.button4.BackColor = System.Drawing.Color.LavenderBlush;
             this.button4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(2, 596);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(130, 78);
             this.button4.TabIndex = 13;
@@ -194,7 +194,7 @@
             this.button3.BackColor = System.Drawing.Color.LavenderBlush;
             this.button3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(2, 494);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(130, 78);
             this.button3.TabIndex = 12;
@@ -207,7 +207,7 @@
             this.button2.BackColor = System.Drawing.Color.LavenderBlush;
             this.button2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(2, 394);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 78);
             this.button2.TabIndex = 11;
@@ -220,7 +220,7 @@
             this.button1.BackColor = System.Drawing.Color.LavenderBlush;
             this.button1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(2, 294);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 78);
             this.button1.TabIndex = 10;
@@ -237,7 +237,7 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.panel1);
             this.panel6.Location = new System.Drawing.Point(-5, 1);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1454, 870);
             this.panel6.TabIndex = 18;
@@ -257,6 +257,17 @@
             this.panel2.Size = new System.Drawing.Size(1419, 83);
             this.panel2.TabIndex = 66;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(12, 16);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(104, 51);
+            this.button5.TabIndex = 31;
+            this.button5.Text = "<";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // lbl_dessert
             // 
@@ -388,7 +399,7 @@
             this.panel3.Controls.Add(this.PageLabel);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Cross;
             this.panel3.Location = new System.Drawing.Point(554, 641);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(164, 73);
             this.panel3.TabIndex = 20;
@@ -415,6 +426,7 @@
             this.PrevPage.TabIndex = 65;
             this.PrevPage.Text = "<<";
             this.PrevPage.UseVisualStyleBackColor = true;
+            this.PrevPage.Click += new System.EventHandler(this.PrevPage_Click);
             // 
             // food_set8
             // 
@@ -465,7 +477,7 @@
             this.foodpfp8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp8.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp8.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp8.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp8.Name = "foodpfp8";
             this.foodpfp8.Size = new System.Drawing.Size(222, 180);
             this.foodpfp8.TabIndex = 19;
@@ -556,11 +568,12 @@
             this.foodpfp2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp2.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp2.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp2.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp2.Name = "foodpfp2";
             this.foodpfp2.Size = new System.Drawing.Size(222, 180);
             this.foodpfp2.TabIndex = 19;
             this.foodpfp2.Click += new System.EventHandler(this.SELECT_INDEX_2);
+            this.foodpfp2.Paint += new System.Windows.Forms.PaintEventHandler(this.foodpfp2_Paint);
             // 
             // food_name2
             // 
@@ -647,7 +660,7 @@
             this.foodpfp1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp1.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp1.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp1.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp1.Name = "foodpfp1";
             this.foodpfp1.Size = new System.Drawing.Size(222, 180);
             this.foodpfp1.TabIndex = 19;
@@ -727,7 +740,7 @@
             this.foodpfp4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp4.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp4.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp4.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp4.Name = "foodpfp4";
             this.foodpfp4.Size = new System.Drawing.Size(222, 180);
             this.foodpfp4.TabIndex = 19;
@@ -806,11 +819,12 @@
             this.foodpfp5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp5.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp5.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp5.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp5.Name = "foodpfp5";
             this.foodpfp5.Size = new System.Drawing.Size(222, 180);
             this.foodpfp5.TabIndex = 19;
             this.foodpfp5.Click += new System.EventHandler(this.SELECT_INDEX_5);
+            this.foodpfp5.Paint += new System.Windows.Forms.PaintEventHandler(this.foodpfp5_Paint);
             // 
             // food_name5
             // 
@@ -885,7 +899,7 @@
             this.foodpfp7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp7.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp7.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp7.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp7.Name = "foodpfp7";
             this.foodpfp7.Size = new System.Drawing.Size(222, 180);
             this.foodpfp7.TabIndex = 19;
@@ -964,7 +978,7 @@
             this.foodpfp6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp6.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp6.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp6.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp6.Name = "foodpfp6";
             this.foodpfp6.Size = new System.Drawing.Size(222, 180);
             this.foodpfp6.TabIndex = 19;
@@ -1044,7 +1058,7 @@
             this.foodpfp3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.foodpfp3.Cursor = System.Windows.Forms.Cursors.Cross;
             this.foodpfp3.Location = new System.Drawing.Point(30, 10);
-            this.foodpfp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foodpfp3.Margin = new System.Windows.Forms.Padding(2);
             this.foodpfp3.Name = "foodpfp3";
             this.foodpfp3.Size = new System.Drawing.Size(222, 180);
             this.foodpfp3.TabIndex = 19;
@@ -1074,17 +1088,6 @@
             this.food_price3.TabIndex = 24;
             this.food_price3.Text = "fPrice1";
             // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 16);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 51);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "<";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
             // Kiosk_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1093,7 +1096,7 @@
             this.ClientSize = new System.Drawing.Size(1460, 920);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Kiosk_Screen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";

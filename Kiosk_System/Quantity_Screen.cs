@@ -26,6 +26,7 @@ namespace Kiosk_System
             labelqty.Text = quantity.ToString();
             label_price.Text = (kiosk_item.it_price).ToString(".00");
             label_name.Text = (kiosk_item.it_name).ToString();
+            food_item1.BackgroundImage = kiosk_item.it_icon;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -61,6 +62,7 @@ namespace Kiosk_System
                 order.orderName = kiosk_item.it_name;
                 order.OrderAmount = quantity;
                 order.OrderPrice = (kiosk_item.it_price * quantity);
+                order.ordericon = kiosk_item.it_icon;
                 bool already_exists = false;
                 for (int ordindex = 0; ordindex < KSession.VIEW_ORDER.Orders.Count; ordindex++)
                 {
@@ -126,6 +128,11 @@ namespace Kiosk_System
             }
             labelqty.Text = quantity.ToString();
             label_price.Text = (kiosk_item.it_price * quantity).ToString(".00");
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

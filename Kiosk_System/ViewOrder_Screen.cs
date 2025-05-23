@@ -96,6 +96,7 @@ namespace Kiosk_System
                 foodName[counter].Text = order.orderName;
                 foodPrice[counter].Text = order.OrderPrice.ToString();
                 foodamount[counter].Text = order.OrderAmount.ToString();
+                foodIcon[counter].BackgroundImage = order.ordericon;
                 counter++;
             }
             

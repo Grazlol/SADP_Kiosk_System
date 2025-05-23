@@ -178,7 +178,11 @@ namespace Kiosk_System
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            if (current_page < page_glossary.Length)
+            {
+                current_page++;
+            }
+            KSession.refresh();
         }
 
         private void SELECT_INDEX_1(object sender, EventArgs e)
@@ -445,6 +449,25 @@ namespace Kiosk_System
         private void button5_Click_1(object sender, EventArgs e)
         {
             KSession.nextwindow("START");
+        }
+
+        private void foodpfp2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void foodpfp5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PrevPage_Click(object sender, EventArgs e)
+        {
+            if (current_page > 1)
+            {
+                current_page--;
+            }
+            KSession.refresh();
         }
     }
 

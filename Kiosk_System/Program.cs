@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using MySqlX.XDevAPI.Relational;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 
 namespace Kiosk_System
 {
@@ -88,10 +89,17 @@ namespace Kiosk_System
                 tempitems[tempitems.Count - 1].it_ingr = row.ItemArray[3].ToString().Split(',');
                 tempitems[tempitems.Count - 1].it_cate = tempitems[tempitems.Count - 1].it_code[0].ToString();
 
-                if (row.ItemArray[4].ToString() != "null")
+                if (row.ItemArray[4] != DBNull.Value)
                 {
-                    //add a query daw
-                    //tempitems[tempitems.Count - 1].it_icon = new Bitmap(row.ItemArray[4].ToString());
+                    byte[] imageBytes = (byte[])row[4];
+                    using (MemoryStream ms = new MemoryStream(imageBytes))
+                    {
+                        System.Drawing.Image image = System.Drawing.Image.FromStream(ms);
+                        tempitems[tempitems.Count - 1].it_icon = image;
+                    }
+                } else
+                {
+                    tempitems[tempitems.Count - 1].it_icon = null;
                 }
 
             }
@@ -238,6 +246,6 @@ namespace Kiosk_System
         public string orderName;
         public int OrderAmount;
         public float OrderPrice;
-        
+        public Image ordericon;
     }
 }
