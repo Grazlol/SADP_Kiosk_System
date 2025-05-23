@@ -101,6 +101,7 @@
             this.foodpfp3 = new System.Windows.Forms.Panel();
             this.food_name3 = new System.Windows.Forms.Label();
             this.food_price3 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HOA_Logo)).BeginInit();
             this.panel6.SuspendLayout();
@@ -245,6 +246,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Coral;
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.lbl_dessert);
             this.panel2.Controls.Add(this.lbl_sides);
             this.panel2.Controls.Add(this.lbl_fish);
@@ -1072,6 +1074,17 @@
             this.food_price3.TabIndex = 24;
             this.food_price3.Text = "fPrice1";
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(12, 16);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(104, 51);
+            this.button5.TabIndex = 31;
+            this.button5.Text = "<";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // Kiosk_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1190,6 +1203,7 @@
         private System.Windows.Forms.Label lbl_fish;
         private System.Windows.Forms.Label lbl_chicken;
         private System.Windows.Forms.PictureBox HOA_Logo;
+        private System.Windows.Forms.Button button5;
     }
 }
 

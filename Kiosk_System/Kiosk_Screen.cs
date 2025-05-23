@@ -441,6 +441,11 @@ namespace Kiosk_System
         {
 
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            KSession.nextwindow("START");
+        }
     }
 
     public class tempOrder

@@ -167,7 +167,7 @@ namespace Kiosk_System
 
         }
 
-        static string database_properties = "server='localhost';user='root';password='';database=ksys";
+        static string database_properties = "server='sql12.freesqldatabase.com';user='sql12780508';password='m7g46IuTFz';database=sql12780508";
 
         private static MySqlCommand cmd;//DONT TOUCH THIS BTW
         private static string Last_Created_ID = "";
