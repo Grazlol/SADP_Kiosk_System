@@ -10,6 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace Kiosk_System
 {
@@ -82,11 +83,16 @@ namespace Kiosk_System
                     user_session = number.ToString("D3");
                 }
 
-                KSession.query("INSERT INTO table_trhist (ev_time, or_list, or_type, to_pric, tr_code, uid) VALUES('" + DateTime.UtcNow + " UTC', '" + OrderList + "', '" + Order_Type + "', " + KSession.VIEW_ORDER.TOTALORDERPRICE.ToString(".00") + ", '" + GenerateCode() + "', " + user_session + ");");
-                if(Order_Type == "DINEIN")
+                KSession.query("INSERT INTO table_user (or_list, or_type, to_pric, uid) VALUES ('"+OrderList+"', '"+Order_Type+"', "+KSession.VIEW_ORDER.TOTALORDERPRICE.ToString(".00")+", '"+user_session+"')");
+                if (Order_Type == "DINEIN")
                 {
                     //DineinNo = DineinNo + 1;
-                    MessageBox.Show("Order Ticket Number: ", "Dine In");
+                    String displayeditems = "";
+                    foreach(Order n in KSession.VIEW_ORDER.Orders)
+                    {
+                        displayeditems += n.orderName + "\n";
+                    }
+                    MessageBox.Show("Order: \n" + displayeditems, "Dine In");
                     KSession.nextwindow("START");
                     KSession.NewSession();
                 } else if (Order_Type == "TAKEOUT")
